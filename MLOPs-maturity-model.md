@@ -3,31 +3,11 @@
 
 |Level|Description|Overview|When Should You Use?| Highlights |
 |---|---|---|---|---|
-|0️⃣|No Automation|<ul><li>All code in Jupyter Notebook</li><li>No pipeline, experiment tracking, and metadata</li> </ul>|<ul><li>Academic projects</li><li>Proof of Concept is the end goal, not production-ready models</li></ul>| <ul><li>Difficult to manage full machine learning model lifecycle</li>
-<li>The teams are disparate and releases are painful</li>
-<li>Most systems exist as "black boxes," little feedback during/post deployment</li></ul>| 
-
-|1️⃣|Yes! DevOps, No MLOps|<ul><li>Best engineering practices followed</li><li>Automated releases</li><li>Unit \& Integration Tests</li><li>CI/CD pipelines</li><li>No experiment tracking and reproducibility</li><li>Good from engineering standpoint, models are not ML-aware yet!</li></ul>|<ul><li>Moving from proof of concept to production</li><li>When you need some automation</li><ul>|<ul><li>Releases are less painful than No MLOps, but rely on Data Team for every new model</li>
-<li>Still limited feedback on how well a model performs in production</li>
-<li>Difficult to trace/reproduce results</li></ul>|
-
-|2️⃣|Automated Training |<ul><li>Training pipelines</li><li>Experiment tracking</li><li>Model registry (track of currently deployed models)</li><li>Data scientists work in tandem with the engineering team</li><li>Low friction deployment</li></ul>|<ul><li>When you have increasing number of use cases</li><li>Three or more use cases, you should definitely consider automating!</li><ul>|
-<ul><li>Training environment is fully managed and traceable</li>
-<li>Easy to reproduce model</li>
-<li>Releases are manual, but low friction</li><ul>
-|
-
-|3️⃣|Automated Deployment |<ul><li>Model deployment simplified!</li><li>Prep data >> Train model >> Deploy model</li><li>A/B testing</li><li>Model X: v1, v2 >> v2 is deployed; how to ensure v2 performs better?</li><li>Model monitoring</li></ul>|<ul><li>Multiple use cases</li><li>More mature + important use cases</li><ul>|
-<ul><li>Releases are low friction and automatic</li>
-<li>Full traceability from deployment back to original data</li>
-<li>Entire environment managed: train > test > production</li><ul>
-|
-
-|4️⃣|Full MLOps Automation |<ul><li>Automated training</li><li>Automated retraining</li><li>Automated deployment</li></ul>|<ul><li>Check if level 2, 3 won't suffice</li><li>Should model retraining and deployment be automated as well?</li><li>Super important to take a pragmatic decision! Do you really need level 4?😄</li><ul>|
-<ul><li>Full system automated and easily monitored</li>
-<ul><li>Production systems are providing information on how to improve and, in some cases, automatically improve with new models</li>
-<ul><li>Approaching a zero-downtime system </li><ul>
-|
+|0️⃣|No Automation|<ul><li>All code in Jupyter Notebook</li><li>No pipeline, experiment tracking, and metadata</li> </ul>|<ul><li>Academic projects</li><li>Proof of Concept is the end goal, not production-ready models</li></ul>| <ul><li>Difficult to manage full machine learning model lifecycle</li><li>The teams are disparate and releases are painful</li><li>Most systems exist as "black boxes," little feedback during/post deployment</li></ul>| 
+|1️⃣|Yes! DevOps, No MLOps|<ul><li>Best engineering practices followed</li><li>Automated releases</li><li>Unit \& Integration Tests</li><li>CI/CD pipelines</li><li>No experiment tracking and reproducibility</li><li>Good from engineering standpoint, models are not ML-aware yet!</li></ul>|<ul><li>Moving from proof of concept to production</li><li>When you need some automation</li><ul>|<ul><li>Releases are less painful than No MLOps, but rely on Data Team for every new model</li><li>Still limited feedback on how well a model performs in production</li><li>Difficult to trace/reproduce results</li></ul>|
+|2️⃣|Automated Training |<ul><li>Training pipelines</li><li>Experiment tracking</li><li>Model registry (track of currently deployed models)</li><li>Data scientists work in tandem with the engineering team</li><li>Low friction deployment</li></ul>|<ul><li>When you have increasing number of use cases</li><li>Three or more use cases, you should definitely consider automating!</li><ul>|<ul><li>Training environment is fully managed and traceable</li><li>Easy to reproduce model</li><li>Releases are manual, but low friction</li><ul>|
+|3️⃣|Automated Deployment |<ul><li>Model deployment simplified!</li><li>Prep data >> Train model >> Deploy model</li><li>A/B testing</li><li>Model X: v1, v2 >> v2 is deployed; how to ensure v2 performs better?</li><li>Model monitoring</li></ul>|<ul><li>Multiple use cases</li><li>More mature + important use cases</li><ul>|<ul><li>Releases are low friction and automatic</li><li>Full traceability from deployment back to original data</li><li>Entire environment managed: train > test > production</li><ul>|
+|4️⃣|Full MLOps Automation |<ul><li>Automated training</li><li>Automated retraining</li><li>Automated deployment</li></ul>|<ul><li>Check if level 2, 3 won't suffice</li><li>Should model retraining and deployment be automated as well?</li><li>Super important to take a pragmatic decision! Do you really need level 4?😄</li><ul>|<ul><li>Full system automated and easily monitored</li><ul><li>Production systems are providing information on how to improve and, in some cases, automatically improve with new models</li><ul><li>Approaching a zero-downtime system </li><ul>|
 
 References:
 * [MLOps Maturity Model: Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model)
